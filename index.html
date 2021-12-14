@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Lets Mine</title>
+    <link rel="icon" href="logo.jpg">
+</head>
+<body>
+    <div id="preloader"></div>
+    <main>
+        <div class="wrapper-1">
+        <div class="contact-section">
+            <h1>Contact Us</h1>
+            <div class="border"></div>
+            <form  action="https://formspree.io/f/xwkyknlg" method="post" class="contact-form" id="contact-form">
+                <input type="text" class="contact-form-text" placeholder="Your Name" name="Name" required>
+                <input type="email" class="contact-form-text" placeholder="Your Email" name="email" required>
+                <input type="text" class="contact-form-text" placeholder="Your Phone" name="phone">
+                <textarea class="contact-form-text" placeholder="Your Message" name="message" required></textarea>
+               <!-- <input type="submit" class="contact-form-btn" value="Send"> -->
+               <button type="submit">Submit</button>
+               <p id="status" class="status"></p>
+               <p class="status-right">Thanks for your submission!</p>
+            </form>
+        </div>
+        </div>
+        <video src="bg-vid.mp4" class="bg-vid" autoplay loop ></video>
+    </main>
+    <script src="contact.js"></script>
+    <script>
+
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display="none";
+        })
+
+    </script>
+</body>
+</html>
